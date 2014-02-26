@@ -18,7 +18,7 @@ let cat input output =
     to_string
       ~f:(function
           | (`Text _ | `Raw _) -> None
-          | `Datetime d -> Some(Datetime.to_string d) 
+          | `Datetime d -> Some(Datetime.to_string d)
         ) d in
   Printf.fprintf output "%s%!" o
 
